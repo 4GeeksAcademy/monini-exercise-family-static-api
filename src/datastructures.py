@@ -22,13 +22,15 @@ class FamilyStructure:
             },
 
             {   "id":self._generateId(),
-                "name": "Jane",
+                "first_name": "Jane",
+                "last_name": self.last_name,
                 "age": 35,
                 "lucky_numbers": [10, 14, 3]
             },
 
             {   "id":self._generateId(),
-                "name": "Jimmy",
+                "first_name": "Jimmy",
+                "last_name": self.last_name,
                 "age": 5,
                 "lucky_numbers": [1]
             },
@@ -56,7 +58,7 @@ class FamilyStructure:
     def get_member(self, id):
         # fill this method and update the return
        for member in self._members:
-        if member ["id"] == id:º
+        if member ["id"] == id:
             return member
 
     # this method is done, it returns a list with all the family members
